@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<title>the priority of selectors</title>
+<style type="text/css">
+*{font: 20px "Comic Same MS";}
+ MYCuatomizeTag {
+   display:block;
+ text-align:center;
+ text-transform: capitalize;
+ text-decoration: undeerline;
+ width: 500px
+ }
+ div{
+    background-color: yellow;
+    margin: 0px 0px 5px 5px;
+    width: 300px;
+ }
+.GroupFormat{
+    font-weight: bold;
+    color: #f00;
+    width: #fff;
+}
+ #TheHighestPriority {
+            background-color: #000;
+            font-weight: none;
+            font:italic 30px "new time roman";
+            color: #fff;
+ }
+</style>
+</head>
+<body>
+    <MyCuatomizeTag>Here is custoimize tag</MyCuatomizeTag>
+    <div>The first paragraph.</div>
+    <div class="GroupFormat">The second paragraph.</div>
+    <div class="GroupFormat"id ="TheHighestPriority">
+        The third paragraph
+    </div>
+    <div>The fourth Paragraph.</div>
+    <div class="GroupFormat">The fifth paragraph.</div>
+    <div class="GroupFormat">The sixth paragraph.</div>
+    <div>The seventh paragraph</div>
+</body>
+</html>
